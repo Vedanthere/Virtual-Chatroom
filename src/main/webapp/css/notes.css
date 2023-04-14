@@ -115,3 +115,12 @@ title{
 #remove:hover{
     background-color: limegreen;
 }
+
+.dot {
+    height: 15px;
+    width: 15px;
+    background-color: chartreuse;
+    border-radius: 50%;
+    display: inline-block;
+    background-image: linear-gradient(orange, chartreuse);
+}

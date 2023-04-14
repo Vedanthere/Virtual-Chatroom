@@ -109,6 +109,9 @@ window.addEventListener('mousemove', (event)=>{
 let turn = 1;
 function game(id)
 {
+    <!--Win/lose-->
+    console.log(turn);
+
     if(turn == 1){
         document.getElementById(id).value = "         X";
         turn = 2;
@@ -131,40 +134,20 @@ function WorL(){
     let b8 = document.getElementById('32').value;
     let b9 = document.getElementById('33').value;
 
-    if(b1 === 'X' && b2 === 'X' && b3 ==='X')
+    if(b1 === '         X' && b2 === '         X' && b3 ==='         X')
     {
         if(turn != 3) {
             console.log("Player 1 wins");
         }
         turn = 3;
     }
-    else if(b4 === 'X' && b5 === 'X' && b6 ==='X'){
+    else if(b4 === '         X' && b5 === 'X' && b6 ==='         X'){
         if(turn != 3) {
             console.log("Player 1 wins");
         }
         turn = 3;
     }
-    else if(b7 === 'X' && b8 === 'X' && b9 ==='X'){
-        if(turn != 3) {
-            console.log("Player 1 wins");
-        }
-        turn = 3;
-    }
-
-
-    else if(b1 === 'X' && b4 === 'X' && b7 ==='X'){
-        if(turn != 3) {
-            console.log("Player 1 wins");
-        }
-        turn = 3;
-    }
-    else if(b2 === 'X' && b5 === 'X' && b8 ==='X'){
-        if(turn != 3) {
-            console.log("Player 1 wins");
-        }
-        turn = 3;
-    }
-    else if(b3 === 'X' && b6 === 'X' && b9 ==='X'){
+    else if(b7 === '         X' && b8 === '         X' && b9 ==='         X'){
         if(turn != 3) {
             console.log("Player 1 wins");
         }
@@ -172,13 +155,33 @@ function WorL(){
     }
 
 
-    else if(b1 === 'X' && b5 === 'X' && b9 ==='X'){
+    else if(b1 === '         X' && b4 === '         X' && b7 ==='         X'){
         if(turn != 3) {
             console.log("Player 1 wins");
         }
         turn = 3;
     }
-    else if(b3 === 'X' && b5 === 'X' && b7 ==='X'){
+    else if(b2 === '         X' && b5 === '         X' && b8 ==='         X'){
+        if(turn != 3) {
+            console.log("Player 1 wins");
+        }
+        turn = 3;
+    }
+    else if(b3 === '         X' && b6 === '         X' && b9 ==='         X'){
+        if(turn != 3) {
+            console.log("Player 1 wins");
+        }
+        turn = 3;
+    }
+
+
+    else if(b1 === '         X' && b5 === '         X' && b9 ==='         X'){
+        if(turn != 3) {
+            console.log("Player 1 wins");
+        }
+        turn = 3;
+    }
+    else if(b3 === '         X' && b5 === '         X' && b7 ==='         X'){
         if(turn != 3) {
             console.log("Player 1 wins");
         }
@@ -187,40 +190,20 @@ function WorL(){
 
 
 
-    if(b1 === 'O' && b2 === 'O' && b3 ==='O')
+    if(b1 === '         O' && b2 === '         O' && b3 ==='         O')
     {
         if(turn != 3) {
             console.log("Player 2 wins");
         }
         turn = 3;
     }
-    else if(b4 === 'O' && b5 === 'O' && b6 ==='O'){
+    else if(b4 === '         O' && b5 === '         O' && b6 ==='         O'){
         if(turn != 3) {
             console.log("Player 2 wins");
         }
         turn = 3;
     }
-    else if(b7 === 'O' && b8 === 'O' && b9 ==='O'){
-        if(turn != 3) {
-            console.log("Player 2 wins");
-        }
-        turn = 3;
-    }
-
-
-    else if(b1 === 'O' && b4 === 'O' && b7 ==='O'){
-        if(turn != 3) {
-            console.log("Player 2 wins");
-        }
-        turn = 3;
-    }
-    else if(b2 === 'O' && b5 === 'O' && b8 ==='O'){
-        if(turn != 3) {
-            console.log("Player 2 wins");
-        }
-        turn = 3;
-    }
-    else if(b3 === 'O' && b6 === 'O' && b9 ==='O'){
+    else if(b7 === '         O' && b8 === '         O' && b9 ==='         O'){
         if(turn != 3) {
             console.log("Player 2 wins");
         }
@@ -228,13 +211,33 @@ function WorL(){
     }
 
 
-    else if(b1 === 'O' && b5 === 'O' && b9 ==='O'){
+    else if(b1 === '         O' && b4 === '         O' && b7 ==='         O'){
         if(turn != 3) {
             console.log("Player 2 wins");
         }
         turn = 3;
     }
-    else if(b3 === 'O' && b5 === 'O' && b7 ==='O'){
+    else if(b2 === '         O' && b5 === '         O' && b8 ==='         O'){
+        if(turn != 3) {
+            console.log("Player 2 wins");
+        }
+        turn = 3;
+    }
+    else if(b3 === '         O' && b6 === '         O' && b9 ==='         O'){
+        if(turn != 3) {
+            console.log("Player 2 wins");
+        }
+        turn = 3;
+    }
+
+
+    else if(b1 === '         O' && b5 === '         O' && b9 ==='         O'){
+        if(turn != 3) {
+            console.log("Player 2 wins");
+        }
+        turn = 3;
+    }
+    else if(b3 === '         O' && b5 === '         O' && b7 ==='         O'){
         if(turn != 3) {
             console.log("Player 2 wins");
         }
