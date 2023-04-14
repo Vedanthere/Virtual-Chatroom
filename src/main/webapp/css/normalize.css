@@ -353,7 +353,7 @@ template {
 .column {
   width: 100px;
   color: #fff;
-  right: 240px;
+  right: 2400px;
   margin-left: -100%;
 }
 
@@ -388,11 +388,12 @@ template {
 }
 
 #left {
-  width: 180px;
+  width: 70px;
   padding: 0 10px;
   right: 240px;
-  margin-left: -100%;
+  margin-left: -10%;
   font-size: 20px;
+  border-radius: 12px;
   font-family: "Dubai Medium";
 }
 
@@ -400,4 +401,23 @@ template {
 #left :hover {
   background-color: powderblue;
   font-size: 100%;
+  border-radius: 12px;
+}
+
+#features{
+  width: 95px;
+  padding: 0 10px;
+  right: 240px;
+  margin-left: 20%;
+  font-size: 20px;
+  font-family: "Dubai Medium";
+  background-position: right bottom;
+  transition: all 2s ease;
+}
+
+#features :hover {
+  background-color: powderblue;
+  font-size: 100%;
+  border-radius: 12px;
+
 }

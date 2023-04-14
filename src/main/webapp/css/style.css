@@ -2,6 +2,7 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    cursor: none;
 }
 
 body {
@@ -169,4 +170,29 @@ a {
 ::placeholder{
     color: #000000;
     opacity: 1;
+}
+
+.cursor{
+    position: absolute;
+    left: 0;
+    top: 0;
+    border-radius: 100px;
+    border: 2px solid red;
+    height: 30px;
+    width: 30px;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+}
+
+.cursor::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    border-radius: 5px;
+    border: 2px dashed orange;
+    height: 6px;
+    width: 6px;
+    transform: translate(100%,100%);
+    pointer-events: none;
 }

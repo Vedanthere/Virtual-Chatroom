@@ -1,0 +1,85 @@
+
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow: hidden;
+    background-color: white;
+}
+
+h1 {
+    width: 50.274%;
+    margin-top: 10px;
+    margin-left: 160px;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: white;
+    font-size: 70px;
+    /font-family: "Arial Rounded MT Bold";/
+    font-family: "Imprint MT Shadow" ;
+    text-align: right;
+    background: #0404ec;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.page {
+    height: 100%;
+    display: flex;
+}
+
+#toolbar {
+    display: flex;
+    flex-direction: row;
+    padding: 5px;
+    width: 100%;
+    background-color: #333232;
+}
+
+#toolbar {
+    margin-bottom: 6px;
+}
+
+#toolbar label {
+    font-size: 12px;
+}
+
+#toolbar #stroke {
+    margin-left: 100px;
+    width: 70px;
+    margin-top: 37px;
+}
+
+#toolbar #stroke_width {
+    width: 150px;
+    height: 25px;
+    margin-top: 37px;
+    margin-left: 5px;
+}
+
+#toolbar button {
+    width: 75px;
+    height: 30px;
+    margin-top: 37px;
+    margin-left: 3px;
+    background-color: #0470ec;
+    border: none;
+    border-radius: 4px;
+    color:white;
+    padding: 2px;
+}
+
+.canvas:hover{
+    cursor: crosshair;
+}
+
+#toolbar:hover{
+    cursor: url("cursor_toolbar.png"), auto;
+}
+
+#toolbar button:hover{
+    cursor: url("cursor_toolbar.png"), auto;
+}
+
+#toolbar #stroke:hover{
+    cursor: url("cursor_toolbar.png"), auto;
+}

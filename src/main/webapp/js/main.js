@@ -97,4 +97,12 @@ function switchRoom(code)
     }
 }
 
+const cursor = document.querySelector('.cursor');
+
+window.addEventListener('mousemove', (event)=>{
+    cursor.style.left = event.pageX+"px";
+    cursor.style.top = event.pageY+"px";
+
+})
 window.onload = showRooms();
+
