@@ -395,6 +395,7 @@ template {
   font-size: 20px;
   border-radius: 12px;
   font-family: "Dubai Medium";
+  transition: all 2s ease;
 }
 
 <!--      /* Change color on hover */-->
@@ -405,10 +406,11 @@ template {
 }
 
 #features{
-  width: 95px;
+  width: 93px;
   padding: 0 10px;
   right: 240px;
   margin-left: 20%;
+  margin-right: 15%;
   font-size: 20px;
   font-family: "Dubai Medium";
   background-position: right bottom;

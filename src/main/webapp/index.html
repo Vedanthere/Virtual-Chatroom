@@ -34,9 +34,11 @@
         <ul id = "drawing">
             <li><a href="./Drawing.html" target="_blank">Whiteboard</a></li>
         </ul>
-        <br>
         <ul id = "task">
             <li><a href="./notes.html" target="_blank">Task List</a></li>
+        </ul>
+        <ul id = "guess">
+            <li><a href="./guess.html" target="_blank">Guess</a></li>
         </ul>
     </div>
 
@@ -44,7 +46,6 @@
         <ul>
             <li><a href="#">Home</a></li>
         </ul>
-        <br>
         <ul id = "about">
             <li><a href="./about.html">About</a></li>
         </ul>
@@ -77,16 +78,30 @@
 <div>
 <textarea title="Chat Log" id="log" readonly
           style="display: block; width: 70vw; height: 59.35vh; resize: none; margin: -17.8vh; padding: 0; border-radius: 0.5vw; border-color: #2e59e8; margin-left: 23.5vw; border-width: 0.6vw"></textarea>
-    <input title="Chat Input" placeholder="Enter Text: " id="input" type="text" style="display: block; width: 70.1vw; margin-top: 20vh; margin-bottom: 0vw;border-width: 0.5vw; border-radius: 0.5vw; border-color: #2e59e8;
+    <input title="Chat Input" placeholder="Enter Text: " id="input" type="text" style="display: block; width: 70vw; margin-top: 20vh; margin-bottom: 0vw;border-width: 0.5vw; border-radius: 0.5vw; border-color: #2e59e8;
               margin-left: 23.5vw";
            autofocus/>
-
 </div>
 <div class="chat-form-container">
 </div>
 
 <div class="cursor"></div>
 
+<h1 id="TTT" style="float: left; color: #cbd20d; text-decoration: underline">Tic Tac Toe Game:</h1>
+
+<div id="board">
+    <input id="11" class="box" onclick="game(11); WorL()"></input>
+    <input id="12" class="box" onclick="game(12); WorL()"></input>
+    <input id="13" class="box" onclick="game(13); WorL()"></input>
+
+    <input id="21" class="box" onclick="game(21); WorL()"></input>
+    <input id="22" class="box" onclick="game(22); WorL()"></input>
+    <input id="23" class="box" onclick="game(23); WorL()"></input>
+
+    <input id="31" class="box" onclick="game(31); WorL()"></input>
+    <input id="32" class="box" onclick="game(32); WorL()"></input>
+    <input id="33" class="box" onclick="game(33); WorL()"></input>
+</div>
 
 <script src="js/main.js"></script>
 <link rel="stylesheet" href="css/style.css" type="text/css"/>

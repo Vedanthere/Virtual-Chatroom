@@ -104,5 +104,145 @@ window.addEventListener('mousemove', (event)=>{
     cursor.style.top = event.pageY+"px";
 
 })
+
+
+let turn = 1;
+function game(id)
+{
+    if(turn == 1){
+        document.getElementById(id).value = "         X";
+        turn = 2;
+    }
+
+    else if (turn == 2) {
+        document.getElementById(id).value = "         O";
+        turn = 1;
+    }
+}
+
+function WorL(){
+    let b1 = document.getElementById('11').value;
+    let b2 = document.getElementById('12').value;
+    let b3 = document.getElementById('13').value;
+    let b4 = document.getElementById('21').value;
+    let b5 = document.getElementById('22').value;
+    let b6 = document.getElementById('23').value;
+    let b7 = document.getElementById('31').value;
+    let b8 = document.getElementById('32').value;
+    let b9 = document.getElementById('33').value;
+
+    if(b1 === 'X' && b2 === 'X' && b3 ==='X')
+    {
+        if(turn != 3) {
+            console.log("Player 1 wins");
+        }
+        turn = 3;
+    }
+    else if(b4 === 'X' && b5 === 'X' && b6 ==='X'){
+        if(turn != 3) {
+            console.log("Player 1 wins");
+        }
+        turn = 3;
+    }
+    else if(b7 === 'X' && b8 === 'X' && b9 ==='X'){
+        if(turn != 3) {
+            console.log("Player 1 wins");
+        }
+        turn = 3;
+    }
+
+
+    else if(b1 === 'X' && b4 === 'X' && b7 ==='X'){
+        if(turn != 3) {
+            console.log("Player 1 wins");
+        }
+        turn = 3;
+    }
+    else if(b2 === 'X' && b5 === 'X' && b8 ==='X'){
+        if(turn != 3) {
+            console.log("Player 1 wins");
+        }
+        turn = 3;
+    }
+    else if(b3 === 'X' && b6 === 'X' && b9 ==='X'){
+        if(turn != 3) {
+            console.log("Player 1 wins");
+        }
+        turn = 3;
+    }
+
+
+    else if(b1 === 'X' && b5 === 'X' && b9 ==='X'){
+        if(turn != 3) {
+            console.log("Player 1 wins");
+        }
+        turn = 3;
+    }
+    else if(b3 === 'X' && b5 === 'X' && b7 ==='X'){
+        if(turn != 3) {
+            console.log("Player 1 wins");
+        }
+        turn = 3;
+    }
+
+
+
+    if(b1 === 'O' && b2 === 'O' && b3 ==='O')
+    {
+        if(turn != 3) {
+            console.log("Player 2 wins");
+        }
+        turn = 3;
+    }
+    else if(b4 === 'O' && b5 === 'O' && b6 ==='O'){
+        if(turn != 3) {
+            console.log("Player 2 wins");
+        }
+        turn = 3;
+    }
+    else if(b7 === 'O' && b8 === 'O' && b9 ==='O'){
+        if(turn != 3) {
+            console.log("Player 2 wins");
+        }
+        turn = 3;
+    }
+
+
+    else if(b1 === 'O' && b4 === 'O' && b7 ==='O'){
+        if(turn != 3) {
+            console.log("Player 2 wins");
+        }
+        turn = 3;
+    }
+    else if(b2 === 'O' && b5 === 'O' && b8 ==='O'){
+        if(turn != 3) {
+            console.log("Player 2 wins");
+        }
+        turn = 3;
+    }
+    else if(b3 === 'O' && b6 === 'O' && b9 ==='O'){
+        if(turn != 3) {
+            console.log("Player 2 wins");
+        }
+        turn = 3;
+    }
+
+
+    else if(b1 === 'O' && b5 === 'O' && b9 ==='O'){
+        if(turn != 3) {
+            console.log("Player 2 wins");
+        }
+        turn = 3;
+    }
+    else if(b3 === 'O' && b5 === 'O' && b7 ==='O'){
+        if(turn != 3) {
+            console.log("Player 2 wins");
+        }
+        turn = 3;
+    }
+
+}
+
 window.onload = showRooms();
+
 

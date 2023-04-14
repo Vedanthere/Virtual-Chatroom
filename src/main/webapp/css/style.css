@@ -196,3 +196,15 @@ a {
     transform: translate(100%,100%);
     pointer-events: none;
 }
+
+#board{
+    display: grid;
+    grid-template-rows: 100px 100px 100px;
+    grid-template-columns: 100px 100px 100px;
+    text-align: center;
+    margin-left: 40%;
+}
+
+#TTT{
+    margin-left: 130px;
+}
