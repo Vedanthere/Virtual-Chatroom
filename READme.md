@@ -48,7 +48,8 @@ and a Number guessing game (for some memes/to relieve stress).
     4. To run task list, click on the "Task List" text on the navigation bar. Once you are on the To Do Task List, you
        can create and manage tasks using "Add Task" button. This allows users to mark tasks as complete.  Once you have 
        completed a task, simply hover over it and click on the check mark to delete it. This feature comes with a hovering 
-       effects to provide a more interactive experience for the users. Whether it is a group project or individual, this will help them keep track of their progress and ensure their success.
+       effects to provide a more interactive experience for the users. Whether it is a group project or individual, 
+       this will help them keep track of their progress and ensure their success.
 
 ## _**Screenshots:**_
 **_Chatting app, which also showcases custom cursor:_**
