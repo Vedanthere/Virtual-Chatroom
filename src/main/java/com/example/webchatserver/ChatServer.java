@@ -15,7 +15,7 @@ public class ChatServer {
     private static Map<String, String> usernames = new HashMap<String, String>(); // Map<sessionID, username>
 
     // static means there is only 1 version of map
-    private static Map<String, String> roomList = new HashMap<>(); //
+    private static Map<String, String> roomList = new HashMap<>();
     @OnOpen
     public void open(@PathParam("roomID") String roomID, Session session) throws IOException, EncodeException {
         roomList.put(session.getId(), roomID);
@@ -87,6 +87,8 @@ public class ChatServer {
             }
         }
     }
+
+    //special commands
     public void usersCommands(Session session) throws IOException {
         StringBuilder stringB = new StringBuilder();
         for(String user : usernames.values())

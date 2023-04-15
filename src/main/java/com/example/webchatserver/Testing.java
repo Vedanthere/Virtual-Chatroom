@@ -38,6 +38,7 @@ public class Testing extends HttpServlet {
         out.println(existingRooms());
     }
 
+    // Adds new room if it does not already exist
     public static void addRoom(String room)
     {
         if(!rooms.contains(room))

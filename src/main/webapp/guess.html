@@ -5,21 +5,25 @@
   <link rel="stylesheet" href="css/guess.css">
 </head>
 <body>
-<!--  <div class imageLeft>-->
-<!--&lt;!&ndash;    <img src="https://media.tenor.com/sapmS0Qn2XwAAAAC/superman-transparent.gif" alt="click here" height="200px" width="200px" />&ndash;&gt;-->
+<!--here are images that appear as decoration to the guessing game...-->
 <img class="anything2 "src="https://images.hellokids.com/_uploads/_tiny_galerie/20090311/girl-sun-animated-gif_k91.gif" alt="click here" height="200px" width="200px" />
 <img class="anything "src="https://assets-global.website-files.com/61406347b8db463e379e2732/6170b5377b069c085b0991e5_ezgif-2-2260bc5d0d32.gif" alt="click here" height="200px" width="200px" />
 <!--  </div>-->
+<!--A div class called guessing is made to make a box along with the text inside with buttons and text area so the solution-->
 <div class="guessing">
+  <!--  The text showing whether or not the client has guessed the number or not-->
   <h1>Guess the number!!</h1>
   <p>Guess a number between 1 and 10:</p>
+  <!--  A text area for the user is made for them to provide input along with a button to tell the application that the user has already guessed-->
   <input type="text" id="input">
   <button onclick="checkInput()">Guess</button>
   <p id="result"></p>
 </div>
+<!--A random image is generated depending on the guess of teh client-->
 <div class="guessing" id="images">
 
 </div>
 <script src="js/guess.js"></script>
 </body>
 </html>
+

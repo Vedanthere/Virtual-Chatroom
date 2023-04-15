@@ -1,4 +1,5 @@
 let ws;
+// allows for new room to be created (either random code, or manual code)
 function newRoom(){
     // calling the ChatServlet to retrieve a new room ID
     let code = document.getElementById("room-code").value;
@@ -20,6 +21,8 @@ function newRoom(){
     }
 
 }
+
+// Enter room with specified code
 function enterRoom(code){
     // create the web socket
     ws = new WebSocket("ws://localhost:8080/WSChatServer-1.0-SNAPSHOT/ws/"+code);
@@ -36,16 +39,22 @@ function enterRoom(code){
         // handle message
         document.getElementById("log").value += "[" + timestamp() + "] " + message.message + "\n";
         }
+
+        // sets a specific time so the chat rooms can load on time
     setTimeout(function() {
         showRooms();
     }, 100);
 }
+
+// function to get current time
 function timestamp() {
     var d = new Date(), minutes = d.getMinutes();
     if (minutes < 10) minutes = '0' + minutes;
     return d.getHours() + ':' + minutes;
 }
 
+
+// when user presses enter, sends message
 document.getElementById("input").addEventListener("keyup", function (event) {
     if (event.keyCode === 13) {
         let request = {"type":"chat", "msg":event.target.value};
@@ -54,6 +63,7 @@ document.getElementById("input").addEventListener("keyup", function (event) {
     }
 });
 
+// with "/testing" endpoint, shows list of chat rooms
 function showRooms()
 {
     let callURL= "http://localhost:8080/WSChatServer-1.0-SNAPSHOT/testing";
@@ -67,6 +77,7 @@ function showRooms()
         .then(response => displayRooms(response));
 }
 
+// to display list of chat rooms on left toolbar
 function displayRooms(data)
 {
     let listOfWords = data.split(",");
@@ -75,12 +86,14 @@ function displayRooms(data)
     listOfWords.forEach(element => addBox(element));
 }
 
+// adds chatroom code as clickable button
 function addBox(element)
 {
     let box = document.getElementById("roomList");
     box.innerHTML += `<button onclick=switchRoom(\"${element}\")>${element}</button> <br> <br>`;
 }
 
+// when the button is clicked, the user is switched to the chat room with that specific id
 function switchRoom(code)
 {
     ws.close();
@@ -97,8 +110,10 @@ function switchRoom(code)
     }
 }
 
+// for custom cursor
 const cursor = document.querySelector('.cursor');
 
+// to get exact position of mouse pointer
 window.addEventListener('mousemove', (event)=>{
     cursor.style.left = event.pageX+"px";
     cursor.style.top = event.pageY+"px";
@@ -106,12 +121,15 @@ window.addEventListener('mousemove', (event)=>{
 })
 
 
+
+// tic tac toe game
+
+//initially player 1's turn
 let turn = 1;
+
+// function to add "X" or "O" values
 function game(id)
 {
-    <!--Win/lose-->
-    console.log(turn);
-
     if(turn == 1){
         document.getElementById(id).value = "         X";
         turn = 2;
@@ -123,6 +141,7 @@ function game(id)
     }
 }
 
+// Function for checking the winner
 function WorL(){
     let b1 = document.getElementById('11').value;
     let b2 = document.getElementById('12').value;
@@ -246,6 +265,7 @@ function WorL(){
 
 }
 
+// as soon as site loads
 window.onload = showRooms();
 
 
