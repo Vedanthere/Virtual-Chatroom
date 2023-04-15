@@ -32,12 +32,11 @@ a {
 .chat-header {
     background: deepskyblue;
     color: rgb(231, 229, 239);
-    /*border-top-left-radius: 5px;*/
-    /*border-top-right-radius: 5px;*/
     padding: 0.5vw;
     display: flex;
     align-items: center;
     justify-content: space-between;
+
 }
 
 .leftside {
@@ -210,5 +209,7 @@ a {
 }
 
 #winner{
-
+    margin-left: 27%;
+    margin-top: -16.5%;
+    float: left;
 }
